@@ -2,8 +2,8 @@ const express=require('express');
 const app=express();
 const port=process.env.Port||5000;
 const Mongoose=require('mongoose');
-const Search=require('./routes/SearchRoute');
 const Member=require('./routes/memberRoute');
+const Search=require('./routes/searchRoute');
 const Bar=require('./routes/barRoute');
 const bodyParser=require('body-parser');
 const cors=require('cors');
@@ -27,8 +27,8 @@ app.use('/api/bar',Bar);
     app.get('*',(req,res)=>{
        res.sendFile(path.resolve(__dirname,"client","build","index.html"))
     })
-//}
 
+//}
 
 const server=app.listen(port,function(){
     console.log('listen on port '+port)
