@@ -1,6 +1,6 @@
 const express=require('express');
 const app=express();
-const port=process.env.Port||5000;
+const port=process.env.PORT||5000;
 const Mongoose=require('mongoose');
 const Member=require('./routes/memberRoute');
 const Search=require('./routes/searchRoute');
