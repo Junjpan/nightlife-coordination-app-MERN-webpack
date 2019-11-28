@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap");
+
+*{
+    box-sizing:border-box;
+    
+}
+body {
+    font-family:'Yeon Sung', cursive;
+    background-image:url('./asset/frontpage.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    color:white;
+    background-color:black;
+}
+
+h1{
+    font-family:'Big Shoulders Text', cursive !important;
+    text-align:center
+}
+footer{
+    background-color:black;
+    text-align:center;
+    height:40px;
+    width:100%;
+    position:fixed;
+    left:0;
+    bottom:0;
+}
+
+/* front page*/
+.container{
+    color:black;
+    display:flex;
+    justify-content:space-around;
+    margin-top:50px;
+    overflow-y:auto;
+    justify-content:center;
+}
+/*login component*/
+.login{
+    min-height:550px;
+    padding:20px;
+    width:30%;
+    background-color:black;
+    border:0 solid rgb(81, 120, 3);
+    border-block-end-width:100px ;
+    color:white;
+    margin-left:20px;
+}
+
+input,button{
+    margin:5px;
+}
+
+a{
+    color:rgb(63, 133, 143);
+    text-decoration:none;
+}
+a:hover{
+    color:gray;
+}
+
+/* search component */
+.search{
+    max-height:550px;
+    min-height:550px;
+    width:60%;
+    background-color:rgb(81, 120, 3);
+    padding:20px;
+    border:0 solid black;
+    border-block-start-width: 50px;
+    
+    
+}
+
+.display{
+    margin-top:25px;
+    max-height:320px;
+    overflow-y:auto; 
+}
+.item a{
+ color:black !important
+}
+.item a:hover{
+ transform: scale(1.5) !important;
+ color:white !important;
+}
+
+.item{
+    margin:10px 15px;
+    color:black;
+
+}
+
+.itemImage{
+    border:5px solid white;
+    margin-left:5px    
+}
+.itemImage:hover{
+    opacity:0.8
+}
+
+/* view comments*/
+.view{
+    float: left;
+    padding-Left: 15px;
+    width:50%;
+}
+
+/*chat room component */
+.chatroom{
+    width:50%; 
+    height:310px;
+    color:white;
+    box-sizing: border-box;
+    position:relative;
+}
+
+
+#message{
+    position:absolute;
+    bottom:0px;
+    width:80%;
+    left:0px;
+    height:25px;
+    opacity:0.6;
+}
+
+#chatbutton{
+    position:absolute; 
+    width:70px;
+    height:25px;
+    background:rgb(81, 120, 3);
+    bottom:0px;
+    right:0px;
+}
+/*Map Component*/
+.loginPage{
+    color:white;
+}
+
+.map{
+    min-height:550px;
+    width:400px;
+    background-color:black;
+    border:0 solid rgb(81, 120, 3);
+    border-block-end-width:100px ;
+    color:white;
+    margin-left:20px;
+}
+
+.mapItem{
+    margin-top:25px;
+      width:400px;
+      height:400px
+}
+
+@media only screen and (max-width:750px){
+
+  .container{
+      display:grid;  
+      grid-template-columns: 100%;
+      margin-top:10px;
+  }  
+  .search{
+    width:100%;
+    min-height:300px;
+ }
+ .item{
+     display:grid !important;
+ }
+ .item img{
+     width:100% !important;
+ }
+
+.login,.map{width:100%;
+min-height:200px;
+border:0px;
+margin-left:0px;}
+
+footer{
+    position:relative;
+}
+
+.view{
+    padding-Left: 15px;
+    width:100%;
+}
+
+.chatroom{
+    width:100%;
+}
+}
