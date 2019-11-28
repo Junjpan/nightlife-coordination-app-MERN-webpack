@@ -10,7 +10,6 @@ const cors=require('cors');
 const socket=require('socket.io');
 const path=require('path');
 
-
 require('dotenv').config();
 app.use(bodyParser.json());
 app.use(cors())
