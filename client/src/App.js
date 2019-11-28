@@ -6,7 +6,7 @@ import MapContainer from './components/MapContainer';
 import axios from 'axios';
 
 //set up a global axios defaults
-axios.defaults.baseURL="http://localhost:5000"
+//axios.defaults.baseURL="http://localhost:5000" only used when you open the app in localhost
 
 
 
