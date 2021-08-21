@@ -9,7 +9,6 @@
     "client": "cd client && npm start",
     "dev": "concurrently \"npm run server\" \"npm run client\" ",
     "heroku-postbuild": "npm install --prefix client && npm install --dev --prefix client && npm run build --prefix client",
-    "build": "npm install --prefix client && npm install --dev --prefix client && npm run build --prefix client"
   },
   "author": "June Bug",
   "license": "ISC",
